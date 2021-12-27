@@ -15,7 +15,7 @@ pipeline_options = {
     'template_location': 'gs://pipeline_batch/template/template_arq_batch1' 
 }
 
-#CONTA DE SERVIÇO
+#CONTA DE SERVIÇO COM CHAVE JSON PARA COMUNICAÇÃO
 
 serviceAccount = r'C:\Users\paulo\Desktop\vscode\pipelineprojeto-b039b9a8daaf.json'
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = serviceAccount
