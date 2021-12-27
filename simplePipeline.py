@@ -1,10 +1,11 @@
+#GERAR TEMPLATE DE PIPELINE PARA DATAFLOW 
 #IMPORTANDO BIBLIOTECAS
 
 import apache_beam as beam
 import os
 from apache_beam.options.pipeline_options import PipelineOptions
 
-#OPÇÕES DE PIPELINE PARA DATAFLOW
+#OPÇÕES DE PIPELINE PARA DATAFLOW DO GOOGLE CLOUD PLATFORM
 
 pipeline_options = {
     'project': 'pipelineprojeto',
@@ -15,7 +16,7 @@ pipeline_options = {
     'template_location': 'gs://pipeline_batch/template/template_arq_batch1' 
 }
 
-#CONTA DE SERVIÇO COM CHAVE JSON PARA COMUNICAÇÃO
+#CONTA DE SERVIÇO COM CHAVE JSON PARA COMUNICAÇÃO COM GOOGLE CLOUD PLATFORM
 
 serviceAccount = r'C:\Users\paulo\Desktop\vscode\pipelineprojeto-b039b9a8daaf.json'
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = serviceAccount
