@@ -1,8 +1,8 @@
-## Modelo Simples de Pipeline para Dataflow
+## Modelo Simples de Pipeline para Dataflow com Python e Apache Beam.
 
 #### Criação de um template de pipeline, dados em Batch, para utilizar no Dataflow.
 
-Este script gera um arquivo template para utilizar no Dataflow e o salva em uma bucket no Google Storage.
+Este script utiliza o Apache Beam para gerar um arquivo modelo personalizado de pipeline que será utilizado no Dataflow e o salva em uma bucket no Google Storage.
 É necessário alterar os caminhos das buckets para funcionar. 
 
 ##### Localmente se fez necessário instalar os seguintes pacotes:
