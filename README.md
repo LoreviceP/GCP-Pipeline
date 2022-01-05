@@ -1,5 +1,10 @@
 ## Modelo Simples de Pipeline para Dataflow com Python e Apache Beam.
 
+</div>
+<div style="display: inline_block"><br>
+  <img align="center" alt="Pipeline-GCP" height="600" width="800" src="https://github.com/LoreviceP/GCP-Pipeline/blob/13aeae904f59cb98c372781ac34a04ebb5478a7b/Diagrama_Simple_Pipeline.png">
+</div>
+
 #### Criação de um template de pipeline, dados em Batch, para utilizar no Dataflow.
 
 Este script utiliza o Apache Beam para gerar um arquivo modelo personalizado de pipeline que será utilizado no Dataflow e o salva em uma bucket no Google Storage.
