@@ -22,6 +22,11 @@ Este script utiliza o Apache Beam para gerar um arquivo modelo personalizado de 
 - Transformação para caixa alta de todo o conteúdo utilizando uma função anônima;
 - Carregamento do arquivo como (*.txt) para outra bucket em GCP Storage.
 
+</div>
+<div style="display: inline_block"><br>
+  <img align="center" alt="Pipeline-GCP" height="600" width="800" src="https://github.com/LoreviceP/GCP-Pipeline/blob/852bd878cc9de02728c604654b81886eb416d47e/Diagrama_Simple_Pipeline1.PNG">
+</div>
+
 ##### Chave de liberação para comunicar com GCP
 
 Foi necessário criar uma chave, na conta de serviço, para autorizar o acesso ao GCP. 
