@@ -22,16 +22,16 @@ serviceAccount = r'C:\Users\paulo\Desktop\vscode\pipelineprojeto-b039b9a8daaf.js
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = serviceAccount
 
 pipeline_options = PipelineOptions.from_dictionary(pipeline_options)
-p = beam.Pipeline(options=pipeline_options)
+pipe = beam.Pipeline(options=pipeline_options)
 
 #OPERAÇÕES DA PIPELINE - ETL
 
 texto = (
-    p
+    pipe
     |'Extrair dados' >> beam.io.ReadFromText('gs://pipeline_batch/entrada_dados/big_text.txt')
     |'Caixa alta' >> beam.Map(lambda record: record.upper())
     #|'Saida de dados' >> beam.Map(print)
     |'Gravar dados' >> beam.io.WriteToText('gs://pipeline_batch/saida_dados/big_text_uppercase.txt')
 )
 
-p.run()
+pipe.run()
